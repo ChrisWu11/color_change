@@ -1,0 +1,14 @@
+/* 背景颜色规范(主要) */
+$background-color-theme: #d43c33;
+$background-color-theme1: #42b983;
+$background-color-theme2: #333;
+
+@mixin bg_color(){
+  background: $background-color-theme;
+  [data-theme=theme1] & {
+    background: $background-color-theme1;
+  }
+  [data-theme=theme2] & {
+    background: $background-color-theme2;
+  }
+}
